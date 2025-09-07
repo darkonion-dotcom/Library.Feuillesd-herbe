@@ -4,7 +4,9 @@
 
 You can find the full technical report for this project in the following PDF:
 
-👉 [Download "REPORTE DE CSS"](docs/REPORTE%20DE%20CSS.pdf)
+👉 In Spanish: [Download "REPORTE DE CSS"](docs/REPORTE%20DE%20CSS.pdf)  
+👉 In English: [Download "REPORT OF CSS.en"](docs/REPORT%20OF%20CSS.en.pdf)
+
 
 This document includes a detailed explanation of the code, structure, and logic behind the project.
 
