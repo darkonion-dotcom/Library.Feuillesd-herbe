@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería Feuilles d'herbe</title>
+  <style>
+   img/horizontal {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+    /* --- Estilos Generales --- */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    header {
+      background-color: #1D3557;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header nav a {
+      color: white;
+      margin-left: 15px;
+      text-decoration: none;
+    }
+
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    marquee {
+      background-color: #fef9cc;
+      color: #92400e;
+      padding: 10px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* --- Banner con imagen --- */
+    .letras {
+      position: relative;
+      height: 400px;
+    }
+
+    .letras img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .letras-texto {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 32px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* --- Categorías --- */
+    .categorias {
+      padding: 50px 20px;
+      background-color: #f9fafb;
+      text-align: center;
+    }
+
+    .categorias h3 h1 h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+ .gridLib {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .categoria {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      padding: 10px;
+    }
+
+    .categoria img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 8px;
+    }
+
+    /* --- Formulario --- */
+    .registro {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgb(215, 221, 217);
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+    }
+
+    .registro h3 {
+      text-align: center;
+      color: #3E6121;
+      margin-bottom: 20px;
+    }
+
+    .registro table {
+      width: 100%;
+      border-spacing: 15px;
+    }
+
+    .registro input, .registro select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .registro button {
+      background-color: #3E6121;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .registro button:hover {
+      background-color: #83ac51;
+    }
+
+    /* --- Pie de página --- */
+    footer {
+      background-color: #1D3557;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+	.img-align {
+  display: block;         /* Hace que la imagen se comporte como un bloque */
+  margin: 0 auto;         /* Centra la imagen horizontalmente */
+  max-width: 100%;        /* La imagen no será más ancha que su contenedor */
+  height: 100%;           /* Mantiene la proporción original de la imagen */
+}
+.book-card .rating {
+  color:gold;
+  margin-top: auto;               /* empuja este bloque hasta abajo */
+  display: flex;                  /* flex en fila */
+  justify-content: space-between; /* estrellas ↔ bolsa */
+  align-items: center;            /* centrado vertical */
+  padding: 1rem;
+         /* fondo opcional */
+}
+.book-card .rating .bagf {
+  font-size: 1.5rem;
+  color: rgb(0,0,0);
+  cursor: pointer;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.book-card img {
+  width: 100%;
+  height: 60%;
+  border-radius: 5px;
+}
+
+
+.book-card h3 {
+  margin: 10px 0 5px;
+
+  /* 1) Convertimos el elemento en una caja flexible de WebKit */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+
+  /* 2) Limitamos a 2 líneas */
+  -webkit-line-clamp: 3;
+
+  /* 3) Recortamos el resto y mostramos “…” */
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* 4) Ajustamos line-height para calcular bien la altura */
+  line-height: 1.2;
+  max-height: calc(1.2em * 3);
+}
+
+.book-card p {
+  font-size: 0.9em;
+  font-family: Cambria;
+  color: #666;
+  align: auto;
+}
+
+.rating p {
+  color: rgba(247, 190, 3, 0.89);
+  font: 15px Calisto MT;
+}
+.bagf {
+  font-size: 15px;
+  color: rgb(0,0,0);
+  border: none;
+  cursor: pointer;
+  background:none;
+}
+.bagf.anadido{
+  color: green;
+}
+.carrito-container {
+  margin-top: 5px; /* Ajusta según sea necesario */
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+#contador-carrito {
+  background-color: red;
+  color: white;
+  font-size: 14px;
+  padding: 0; /* Elimina el relleno para mantener la forma circular */
+  width: 20px; /* Ajusta el ancho */
+  height: 20px; /* Ajusta la altura */
+  border-radius: 50%; /* Hace que sea completamente circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav {
+  display: flex;
+  flex-direction: row; /* Cambia el flujo a vertical */
+  align-items: flex-start; /* Alinea los elementos al inicio */
+  gap: 10px; /* Espaciado entre los elementos */
+}

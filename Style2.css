@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f8;
+  color: #333;
+  padding-bottom: 60px;
+}
+
+.header {
+  background: #1D3557;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+}
+
+
+.header .volver {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.checkout-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.formulario,
+.resumen {
+  flex: 1 1 400px;
+  background:rgb(215, 221, 217);
+  padding: 3.5rem;
+  border-radius: 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #3E6121;
+}
+
+form label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #3E6121;
+  border-radius: 8px;
+}
+
+ul#lista-carrito {
+  list-style: none;
+  margin-top: 1rem;
+}
+
+ul#lista-carrito li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  text-align: right;
+}
+
+.btn-pagar {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background: #3E6121;
+  color: #8dda4f;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-pagar:hover {
+  background: #83ac51;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #f1f1f1;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.mensaje {
+  background-color: rgba(233, 228, 228, 0.7);
+  padding: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.mensaje h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.mensaje p {
+  font-size: 1.2rem;
+}
+.h1 {
+ background-color: #000000;
+}

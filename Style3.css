@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F4F4F8; /* Blanco Hueso */
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background-color: #1D3557; /* Azul Profundo */
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: right;
+  flex-wrap: wrap;
+}
+.header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+.header nav a:visited {
+  color: white;
+}
+
+.header h1 {
+  font-size: 28px;
+  color: #f3f5f1; /* Verde Bosque */
+}
+
+.header nav {
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+.contenido {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.intro,
+.historia,
+.mision,
+.equipo {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3E6121; /* Verde Bosque */
+  border-bottom: 2px solid #E9E4E4; /* Gris Suave */
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1D3557; /* Azul Profundo */
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1D3557; /* Azul Profundo */
+  color: white;
+  margin-top: 60px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-link {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F4F4F8; /* Blanco Hueso */
+  color: #333;
+}
+
+header {
+  background-color: #1D3557; /* Azul Profundo */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #3E6121; /* Verde Bosque */
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+}
+
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #3E6121; /* Verde Bosque */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Formulario */
+form {
+  background-color: #D7DDD9; /* Verde Claro */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #E9E4E4; /* Gris Suave */
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #3E6121; /* Verde Bosque */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2C4A17; /* Slightly darker Verde Bosque */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #1D3557; /* Azul Profundo */
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}

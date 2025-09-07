@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Librería Feuilles d'herbe</title>
+<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="Style2.css">
+<!------------CDN ICONOS----->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<style>
+ body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+	</style>
+</head>
+<body>
+
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Librería Feuilles d'herbe</h1>
+    <nav>
+      <a href="Catalogo.html">Catálogo</a>      
+      <a href="nosotros.html">Nosotros</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="Cobro.html">Bolsa 🛍️💳</a>
+    </nav>
+  </header>
+  <!-- Marquee -->
+  <marquee>📚 ¡Promoción especial! 2x1 en libros escolares durante todo el mes de abril 📚</marquee>
+<!-- Imagen Eslogan -->
+<div class="img-align">
+  <img src="Feuilles d'herbe.png" class="img-align" alt="Librería">
+</div>
+
+  
+  <!-- Banner -->
+  <section class="letras">
+    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794" class="img-align"alt="Librería">
+    <div class="letras-texto">Bienvenido a la mejor librería de México</div>
+  </section>
+
+  <!-- Categorías -->
+  <section class="categorias">
+    <h3>Categorías</h3>
+    <div class="grid">
+      <div class="categoria">
+        <img src="https://glotopolitica.com/wp-content/uploads/2019/02/foto_libreria.jpg?w=760" alt="Literatura">
+        <p>📚 Literatura</p>
+      </div>
+      <div class="categoria">
+        <img src="https://cdn.agenciasinc.es/var/ezwebin_site/storage/images/_aliases/img_1col/noticias/los-documentos-de-albert-einstein-a-un-solo-clic/3446055-1-esl-MX/Los-documentos-de-Albert-Einstein-a-un-solo-clic.jpg" alt="Ciencias">
+        <p>⚗️ Ciencias</p>
+      </div>
+      <div class="categoria">
+        <img src="https://cdn.culturagenial.com/es/imagenes/estatua-de-la-justicia-og.jpg?class=ogImageRectangle" alt="Derecho">
+        <p>⚖️ Derecho</p>
+      </div>
+      <div class="categoria">
+        <img src="https://www.ulatina.ac.cr/sites/default/files/inline-images/01-Blog-UL-17.png" alt="Medicina">
+        <p>💊 Medicina</p>
+      </div>
+      <div class="categoria">
+        <img src="https://cdn.lavoz.com.ar/sites/default/files/styles/width_1072/public/galeria_multimedia/charles_manson16_1565886708.jpg" alt="Literatura">
+        <p>🧠 Psicología </p>
+      </div>
+      <div class="categoria">
+        <img src="https://mxc.com.mx/wp-content/uploads/2020/03/Cocina-azteca-3.jpg" alt="Ciencias">
+        <p>🍽️ Cocina y Gastronomía</p>
+      </div>
+      <div class="categoria">
+        <img src="https://msmk.university/wp-content/uploads/2025/02/Foto25.jpg" alt="Derecho">
+        <p>💻 Informática / Programación</p>
+      </div>
+      <div class="categoria">
+        <img src="https://i.pinimg.com/736x/a4/d9/91/a4d9910a2286b5eb8fa7085273e2f74e.jpg" alt="Medicina">
+        <p>🏛️ Arquitectura</p>
+      </div>
+	  <div class="categoria">
+        <img src="https://c.files.bbci.co.uk/2BC5/production/_101150211_marx.jpg" alt="Medicina">
+        <p>🤔 Filosofía</p>
+      </div>
+	  <div class="categoria">
+        <img src="https://cdn.goconqr.com/uploads/node/image/41138739/desktop_b2fa95c6-aa8e-4cb9-a62d-3d808ed405cc.jpeg" alt="Medicina">
+        <p>🏺 Literatura Clásica</p>
+      </div>
+    </div>
+	</div>
+  </section>
+
+  <!-- Registro -->
+  <section class="registro">
+    <h3>Registro de Usuario</h3>
+    <form>
+      <table>
+        <tr>
+          <td><label for="nombre">Nombre:</label></td>
+          <td><input type="text" id="nombre" placeholder="Ingresa tu nombre" required></td>
+        </tr>
+        <tr>
+          <td><label for="correo">Correo:</label></td>
+          <td><input type="email" id="correo" placeholder="Correo electrónico" required></td>
+        </tr>
+        <tr>
+          <td><label for="tel">Teléfono:</label></td>
+          <td><input type="tel" id="tel" placeholder="Teléfono de contacto" required></td>
+        </tr>
+        <tr>
+          <td><label for="categoria">Categoría favorita:</label></td>
+          <td>
+            <select id="categoria">
+              <option>Literatura</option>
+              <option>Ciencias</option>
+              <option>Derecho</option>
+              <option>Medicina</option>
+			  <option>Psicología</option>
+			  <option>Cocina y Gastronomía</option>
+			  <option>Informática / Programación</option>
+			  <option>Arquitectura</option>
+			  <option>Filosofía</option>
+			  <option>Literatura Clásica</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+      <div style="text-align: center; margin-top: 20px;">
+        <button type="submit">Registrarse</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    &copy; 2025 Librería Feuilles d'herbe. Proyecto escolar sin fines de lucro.
+  </footer>
+
+</body>
+</html>
